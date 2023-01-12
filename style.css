@@ -1,0 +1,236 @@
+body {
+    background-color: rgb(51, 121, 225);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 100px;
+    background-color: rgb(17, 17, 58);
+    color: #29f029;
+    font-weight: solid;
+  }
+  
+  nav ul li {
+    padding: 0 12px;
+  }
+  .brand img {
+    width: 100px;
+    height: 105px;
+    padding: 0 8px;
+    border-radius: 50px;
+  }
+  
+  /* .brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+  } */
+  .logo-name{
+    color: #29f029;
+    font-size: 30px;
+    margin-top: 50px;
+  
+  }
+  .logo-line{
+    color: silver;
+    font-size: smaller; 
+    margin-bottom: 50px;
+    margin-left: 80px;
+    padding-top: 5px;
+  }
+  .link a {
+    color: #29f029;
+    /* background-color: black; */
+    opacity: 0.5;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    line-height: 80px;
+    transition: 0.5s;
+    font-size: 20px;
+    font-weight: solid;
+  }
+  
+  .link a:hover {
+    opacity: 1;
+  }
+  
+  #rangeBar {
+    width: 98%;
+    height: 2px;
+    cursor: pointer;
+  }
+  .songbar {
+    padding: 1rem;
+    background-color: rgb(21, 34, 74);
+    color: #2beb51;
+    width: 100%;
+    z-index: 2;
+    margin: auto;
+    position: fixed;
+    bottom: 1rem;
+  }
+  #masterSongBar {
+    align-items: center;
+    margin: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .mid_btn {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .mid_btn i {
+    padding: 0 5px;
+    cursor: pointer;
+    margin: 0 4px;
+  }
+  
+  .queue {
+    background-color: white;
+  }
+  
+  #id {
+    background-color: white;
+  }
+  
+  .songInfo {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    margin: 5px 0;
+  }
+  
+  .masterSongName {
+    margin: 0 10px;
+   
+  }
+  
+  .songName {
+    cursor: pointer;
+  }
+  
+  
+  #Queue,
+  .addtoqueue {
+    background-color: black;
+    border: none;
+    color: #29f029;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 15px;
+  }
+  
+  #Queue:hover,
+  .addtoqueue:hover {
+    background-color: black;
+  }
+  
+  
+  .queuedSong {
+    cursor: pointer;
+  }
+  
+  .cont_nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #music_list {
+    display: flex;
+    flex-direction: column;
+    background-color: #2990f0;
+    background-image: url('https://images.unsplash.com/photo-1614149162883-504ce4d13909?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bXVzaWMlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+  width: 800%;
+  align-items: center;
+  height: auto;
+  min-width: 50%;
+  position: relative;
+  margin: 20px auto;
+  border-radius: 20px;
+  height: 70vh;
+  
+    max-height: 470px;
+    overflow-y: scroll;
+    /* width: 50%; */
+    padding: 1rem;
+  }
+  #music_list::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+    align-items: center;
+  }
+  
+  #music_list::-moz-scrollbar {
+    width: 0;
+    background: transparent;
+  }
+  
+  #music_list {
+    -ms-overflow-style: none;
+  }
+  
+  .shuffleon {
+    color: green;
+  }
+  .section-side {
+    display: flex;
+    flex-grow: 1;
+  }
+  .current-time,
+  .total-duration,
+  #masterSongName {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  
+  #qd,
+  #sd{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 20px auto;
+    text-align: center;
+    /* padding: 10px; */
+    background-color: black;
+    color: #29f029;
+    height: 50%;
+    width: 20%;
+  }
+  
+  #searchsong{
+    background-color: black;
+    width: 240px;
+    height: 20px;
+    color: white;
+    font-size: medium;
+    font-weight: solid;
+    padding: 1rem;
+    border-radius: 4px;
+    border-color: #ed43b4;
+  }
+  
+  #searchsong:hover{
+  background-color: rgb(16, 16, 17);
+  border-radius: 8px;
+  color: #29f029;
+  }
