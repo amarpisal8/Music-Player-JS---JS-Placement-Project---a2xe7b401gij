@@ -9,7 +9,7 @@ let curr_time = document.querySelector(".current-time");
 let total_duration = document.querySelector(".total-duration");
 const next = document.getElementById("next");
 const shuffle = document.getElementById("shuffle");
-const previous = document.getElementById("previous");
+const previous = document.getElementById("p00000000000revious");
 const forwardBtn = document.getElementById("forward");
 const backwardBtn = document.getElementById("backward");
 const searchSongs = document.getElementById("searchsong");
@@ -33,6 +33,7 @@ const apiFetch = async () => {
   const an = document.getElementById("structure");
   music_list = data?.tracks;
   console.log(music_list);
+
   data?.tracks?.forEach((item, index) => {
     const child = document.createElement("div");
     child.className = "musicListDiv";
@@ -49,7 +50,6 @@ const apiFetch = async () => {
       now_playing.innerText = item.name;
       audioPlay(item.previewURL)
     };
-
     an.appendChild(child);
     list.appendChild(child);
   });
@@ -71,7 +71,6 @@ const audioPlay = async (url) => {
 function reset() {
   curr_time.textContent = "00:00";
   total_duration.textContent = "00:00";
-  // seek_slider.value = 0;
 }
 const playandpause = () => {
   const playbtn = document.getElementById("masterPlay");
@@ -228,8 +227,6 @@ searchSongs.onkeydown = (event) => {
         now_playing.innerText = item.name;
         audioPlay(item.previewURL);
       };
-      // const list = document.getElementById("music_list");
-      // an.appendChild(child);
       sd.appendChild(child);
     });
   } else {
